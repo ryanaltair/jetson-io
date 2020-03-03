@@ -129,7 +129,7 @@ class Board(object):
         self.appdir = None
         self.bootdir = '/boot'
         self.extlinux = '/boot/extlinux/extlinux.conf'
-        dtbdir = os.path.join(self.bootdir, 'dtb')
+        dtbdir = os.path.join(self.bootdir, '')
         fio.is_rw(self.bootdir)
 
         # When mounting the rootfs via NFS, the APP partition is not
